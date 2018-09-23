@@ -7,9 +7,11 @@ public class factorial {
 		Scanner sc=new Scanner(System.in);
         int input=sc.nextInt();
         int output=1;
+	if(input!=0){		
         for(int i=1;i<=input;i++) {
         	output=output*i;
         }
+	}
         System.out.println(output);
 	}
 
