@@ -14,5 +14,4 @@ public class factorial {
 	}
         System.out.println(output);
 	}
-
 }
