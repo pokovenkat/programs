@@ -12,7 +12,7 @@ Scanner sc=new Scanner(System.in);
  int l1=s1.length();
  int l2=s2.length();
  if(l1!=l2) {
-	 System.out.println("not isomorphic");
+	 System.out.println("no");
  }
  else {
 	 int k=0;
@@ -28,10 +28,10 @@ Scanner sc=new Scanner(System.in);
  int a=Integer.parseInt(s1);
  int b=Integer.parseInt(s2);
  if(a==b) {
-	 System.out.println("isomorphic ");
+	 System.out.println("yes");
 	 }
  else {
-	 System.out.println("not isomorphic");
+	 System.out.println("no");
  }
  }
 	}
