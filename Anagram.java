@@ -10,17 +10,22 @@ public static void main(String[] args) {
 	for(int i=0;i<n;i++) {
 		input[i]=sc.next();
 	}
-	for(int i=0;i<n;i++) {
-		int l1=input[i].length();
-		for(int j=i+1;j<n;j++) {
-			int l2=input[j].length();
-			if(l1==l2) {
-				if(isAnagram(input[i],input[j])) {
-					count++;
+	if(n==1){
+		count=1;
+	}
+	else{
+		for(int i=0;i<n;i++) {
+			int l1=input[i].length();
+			for(int j=i+1;j<n;j++) {
+				int l2=input[j].length();
+				if(l1==l2) {
+					if(isAnagram(input[i],input[j])) {
+						count++;
+					}
 				}
 			}
+
 		}
-		
 	}
 	System.out.println(count);
 }
