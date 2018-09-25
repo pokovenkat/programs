@@ -1,4 +1,7 @@
+package codekata;
+
 import java.util.Scanner;
+
 
 public class PrimeFactors {
 
@@ -6,10 +9,15 @@ public class PrimeFactors {
 		// TODO Auto-generated method stub
 		Scanner sc =new Scanner(System.in);	
 		int n=sc.nextInt();
-		for(int i=2;i<n;i++) {
-			if(n%i==0) {
-				if(isprime(i)) {
-					System.out.println(i);
+		if(isprime(n)) {
+			System.out.println(n);
+		}
+		else {
+			for(int i=2;i<n;i++) {
+				if(n%i==0) {
+					if(isprime(i)) {
+						System.out.println(i);
+					}
 				}
 			}
 		}
